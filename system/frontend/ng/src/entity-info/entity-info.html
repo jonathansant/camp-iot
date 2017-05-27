@@ -1,0 +1,7 @@
+<div class="entity-list copy-container row large-12">
+    <span class="columns large-1 medium-1 small-2">Id:</span>
+    <span class="columns large-9 medium-9 small-8">{{vm.entity._id}}</span>
+    <button class="columns large-2 medium-2 small-2" ng-click="vm.copyToClipboard(vm.entity._id)">
+        <img zf-iconic="" icon="document" size="medium" class="iconic-color-secondary">
+    </button>
+</div>

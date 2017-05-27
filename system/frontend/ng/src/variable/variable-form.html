@@ -1,0 +1,23 @@
+<div zf-modal id="variable-modal">
+    <div class="grid-block vertical">
+        <div class="title-bar">
+            <div class="center title">Add Variable</div>
+            <span zf-close="" class="right"><a>X</a></span>
+        </div>
+        <form name="variableForm" ng-submit="vm.addVariable(variableForm)">
+            <div class="grid-content center">
+                <div class="large-12">
+                    <label class="medium-centered">
+                        <input type="text" placeholder="Name" name="variableName" ng-model="vm.newVariable.name"
+                               ng-required="true"/>
+                    </label>
+                    <select name="variableType" ng-model="vm.newVariable.type"
+                            ng-options="type.value as type.label for type in vm.variableTypes">
+                    </select>
+                    <input name="isStream" ng-model="vm.newVariable.isStream" type="checkbox"><label>Is Stream</label>
+                    <input type="submit" class="button expand" value="Add"/>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

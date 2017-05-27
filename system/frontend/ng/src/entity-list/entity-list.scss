@@ -1,0 +1,36 @@
+@import "../shared/styles/helpers";
+
+.entity-list {
+  @include block-grid(
+          $spacing: 0.3rem
+  );
+
+  @-moz-document url-prefix() {
+    padding-bottom: $correctOffset;
+  }
+
+  li {
+    .entity-name, .button {
+      width: 100%;
+    }
+
+    .entity-name {
+      background-color: #ccc;
+      text-align: center;
+      color: #444;
+    }
+
+    .button {
+      margin-bottom: 0.1rem;
+      background-color: $alert-color;
+
+      &:hover {
+        background-color: $alert-button-bg-hover;
+      }
+    }
+
+    img {
+      padding: 2rem;
+    }
+  }
+}

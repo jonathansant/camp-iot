@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="camp-dashboard" ng-strict-di>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Camp-Dashboard</title>
+    <link rel="stylesheet" href="/css/styles.css"/>
+    <!--<link rel="stylesheet" href="/css/foundation-icons/foundation-icons.css"/>-->
+</head>
+<body ng-controller="menuController as vm">
+<div class="off-canvas-wrap" data-offcanvas>
+    <div class="inner-wrap">
+        <nav class="tab-bar">
+            <section class="left-small">
+                <a class="left-off-canvas-toggle menu-icon"><span></span></a>
+            </section>
+
+            <section class="middle tab-bar-section">
+                <h1 class="title"><a ui-sref="secure.home">Camp Dashboard</a></h1>
+            </section>
+
+            <section class="right-small">
+                <button ng-click="vm.redirectToLoginOrLogout()" class="button loginButton">
+                    <!--todo make it dynamic and change depending on log status-->
+                    <img zf-iconic="" icon="person" size="medium"
+                         class="iconic-color-primary">
+                </button>
+            </section>
+        </nav>
+
+        <!-- Off Canvas Menu -->
+        <aside class="left-off-canvas-menu">
+            <ul class="off-canvas-list">
+                <li><label>Camp Navigation</label></li>
+                <li><a ui-sref="secure.home">Home</a></li>
+                <li><a ui-sref="secure.sensor">Sensors</a></li>
+            </ul>
+        </aside>
+
+        <!-- main content goes here -->
+        <main ui-view class="grid-content">
+        </main>
+
+        <!-- close the off-canvas menu -->
+        <a class="exit-off-canvas"></a>
+    </div>
+</div>
+
+<zf-notification-set id="main-notifications" position="top-left"></zf-notification-set>
+
+<!--todo fix so that we use the proper foundation apps menu and not sites-->
+<!--todo fix so that we have proper ui router and not index code-->
+
+</body>
+
+<script src="/js/scripts.js"></script>
+</body>
+</html>

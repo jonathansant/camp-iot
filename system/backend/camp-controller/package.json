@@ -1,0 +1,54 @@
+{
+  "name": "camp-iot-controller",
+  "version": "0.7.0",
+  "description": "A Cross-Platform Cloud Middleware for the Internet of Things",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./app.js"
+  },
+  "keywords": [
+    "iot",
+    "cloud",
+    "controller",
+    "camp"
+  ],
+  "author": "Jonathan Sant",
+  "license": "MIT",
+  "devDependencies": {
+    "del": "^2.2.0",
+    "eslint": "~2.10.1",
+    "event-stream": "^3.3.2",
+    "fs": "~0.0.2",
+    "gulp": "~3.9.1",
+    "gulp-if": "^2.0.0",
+    "gulp-install": "^0.6.0",
+    "gulp-jasmine": "^2.3.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-tslint": "~5.0.0",
+    "gulp-tslint-stylish": "~1.1.1",
+    "gulp-typescript": "~2.13.4",
+    "jasmine-spec-reporter": "^2.4.0",
+    "run-sequence": "~1.1.5",
+    "tslint": "~3.10.2"
+  },
+  "dependencies": {
+    "bcrypt-nodejs": "^0.0.3",
+    "body-parser": "^1.15.0",
+    "bunyan": "^1.8.0",
+    "cors": "^2.7.1",
+    "express": "^4.13.4",
+    "jsonwebtoken": "^6.2.0",
+    "lodash": "^4.6.1",
+    "mongodb": "^2.1.11",
+    "mongoose": "^4.4.10",
+    "mqtt": "^1.12.0",
+    "node-uuid": "^1.4.7",
+    "rabbot": "^1.0.2",
+    "socket.io": "^1.4.6",
+    "source-map-support": "^0.4.0",
+    "validator.ts": "^0.2.1"
+  },
+  "engines": {
+    "node": "6.3.0"
+  }
+}

@@ -1,0 +1,11 @@
+.entity-list.copy-container {
+  & > span {
+    background-color: white;
+    padding: 1.29rem;
+  }
+
+  & > span:nth-child(1) {
+    background-color: #2e2e2e;
+    color: white;
+  }
+}

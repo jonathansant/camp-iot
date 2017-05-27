@@ -1,0 +1,26 @@
+{
+  "name": "camp-dashboard",
+  "version": "0.2.0",
+  "dependencies": {
+    "angular": "^1.5.3",
+    "lodash": "^4.11.0",
+    "angular-ui-router": "ui-router#^0.2.18",
+    "foundation-apps": "^1.2.0",
+    "jquery": "^2.2.3",
+    "foundation": "^5.5.3",
+    "angular-animate": "^1.5.3",
+    "angular-local-storage": "^0.2.7",
+    "angular-clipboard": "^1.4.1",
+    "highcharts-ng": "^0.0.11",
+    "socket.io-client": "^1.4.6"
+  },
+  "devDependencies": {
+    "angular-mocks": "^1.4.0"
+  },
+  "appPath": "app",
+  "moduleName": "camp-dashboard",
+  "resolutions": {
+    "angular": "^1.5.3",
+    "angular-animate": "^1.5.3"
+  }
+}

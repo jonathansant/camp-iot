@@ -1,0 +1,7 @@
+system/**/node_modules
+system/**/.idea
+system/**/.vscode
+system/**/_build
+system/**/_artifact
+system/**/bower_components
+system/**/_dist

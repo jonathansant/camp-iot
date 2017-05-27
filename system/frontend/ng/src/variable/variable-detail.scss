@@ -1,0 +1,26 @@
+.variable-current-status {
+  .variable-indicator {
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    margin: 0.5rem;
+
+    &.off {
+      box-shadow: 0 0 0.5rem #E83535;
+      background-color: #D43131;
+    }
+
+    &.on {
+      box-shadow: 0 0 0.5rem #35E862;
+      background-color: #2CC753;
+    }
+  }
+
+  .variable-current-status {
+    margin-top: 0.5rem;
+  }
+}
+
+.variable-history {
+  padding: 0;
+}

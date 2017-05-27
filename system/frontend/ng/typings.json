@@ -1,0 +1,19 @@
+{
+  "ambientDependencies": {
+    "angular": "registry:dt/angular#1.5.0+20160328125810",
+    "angular-animate": "registry:dt/angular-animate#1.5.0+20160407085121",
+    "angular-local-storage": "registry:dt/angular-local-storage#0.1.5+20160317120654",
+    "angular-ui-router": "registry:dt/angular-ui-router#1.1.5+20160317120654",
+    "clipboard": "registry:dt/clipboard#1.5.9+20160316155526",
+    "fastclick": "registry:dt/fastclick#1.0.3+20160317120654",
+    "foundation": "registry:dt/foundation#5.5.1+20160317120654",
+    "highcharts-ng": "registry:dt/highcharts-ng#0.0.8+20160403053442",
+    "jquery": "registry:dt/jquery#1.10.0+20160316155526",
+    "lodash": "registry:dt/lodash#3.10.0+20160330154726",
+    "socket.io": "registry:dt/socket.io#1.4.4+20160317120654",
+    "socket.io-client": "registry:dt/socket.io-client#1.4.4+20160317120654"
+  },
+  "globalDependencies": {
+    "node": "registry:env/node#4.0.0+20160507210304"
+  }
+}

@@ -1,0 +1,38 @@
+<div class="sensor-detail-container">
+    <div class="row">
+        <div class="columns large-8 medium-12 small-12 title-bar large-centered">
+            <div class="title">{{vm.sensor.name}}</div>
+        </div>
+    </div>
+
+    <!--todo refactor with proper grid-block and grid-content for apps-->
+
+    <section class="row sensor-info">
+        <div class="columns large-8 medium-12 small-12 large-centered">
+            <div class="copy-container row large-12">
+                <span class="columns large-1 medium-1 small-2">Id:</span>
+                <span class="columns large-9 medium-9 small-8">{{vm.sensor._id}}</span>
+                <button class="columns large-2 medium-2 small-2" ng-click="vm.copyToClipboard(vm.sensor._id)">
+                    <img zf-iconic="" icon="document" size="medium" class="iconic-color-secondary">
+                </button>
+            </div>
+            <div class="job-var-container row large-12">
+                <button zf-open="variable-modal" class="columns large-6 medium-6 small-6">
+                    Add Variable
+                </button>
+                <button zf-open="job-modal" class="columns large-6 medium-6 small-6">
+                    Add Job
+                </button>
+            </div>
+        </div>
+    </section>
+    <section class="variables" ng-if="vm.variables.length > 0">
+        <variable-list variables="vm.variables" sensor-id="vm.sensorId"></variable-list>
+    </section>
+    <section class="jobs" ng-if="vm.jobs.length > 0">
+        <job-list jobs="vm.jobs" sensor-id="vm.sensorId"></job-list>
+    </section>
+</div>
+
+<variable-form variables="vm.variables"></variable-form>
+<job-form jobs="vm.jobs"></job-form>

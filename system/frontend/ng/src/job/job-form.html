@@ -1,0 +1,27 @@
+<div zf-modal id="job-modal">
+    <div class="grid-block vertical">
+        <div class="title-bar">
+            <div class="center title">Add Job</div>
+            <span zf-close="" ng-click="vm.clearForm()" class="right"><a>X</a></span>
+        </div>
+        <form name="jobForm" ng-submit="vm.addJob(jobForm)">
+            <div class="grid-content center">
+                <div class="large-12">
+                    <label class="medium-centered">
+                        <input type="text" placeholder="Name" name="jobName" ng-model="vm.newJob.name"
+                               ng-required="true"/>
+                    </label>
+
+                    <label ng-repeat="parameter in vm.newJob.parameters track by $index" class="medium-centered">
+                        <input type="text" placeholder="Parameter Name" name="parameterName"
+                               ng-model="vm.newJob.parameters[$index]"
+                               ng-required="true" value="parameter"/>
+                    </label>
+                    <input type="button" class="button secondary" ng-click="vm.addBlankParam()" value="Add Parameter"/>
+
+                    <input type="submit" class="button expand" value="Add"/>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

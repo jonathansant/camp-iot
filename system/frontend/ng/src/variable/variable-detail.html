@@ -1,0 +1,39 @@
+<div class="variable-detail-container">
+    <div class="row">
+        <div class="columns large-8 medium-12 small-12 title-bar large-centered">
+            <div class="title">{{::vm.variable.name}}</div>
+        </div>
+    </div>
+    <section class="row sensor-info">
+        <div class="columns large-8 medium-12 small-12 large-centered">
+            <entity-info entity="vm.variable"></entity-info>
+        </div>
+    </section>
+    <section class="variable-current-status">
+        <div class="row">
+            <div class="columns large-8 medium-12 small-12 title-bar large-centered">
+                <div class="title">Status:</div>
+                <div class="variable-status-container">
+                    <div class="variable-indicator column large-1 medium-1 small-2"
+                         ng-class="{on: vm.variable.value, off: !vm.variable.value}"
+                         ng-if="vm.variable.type === 0"></div>
+                    <div class="variable-current-value column large-8 medium-12 small-12" ng-if="vm.variable.type === 1">
+                        <input type="text" ng-model="vm.variable.value" disabled />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section ng-if="vm.variable.isStream">
+        <div class="row">
+            <div class="columns large-8 medium-12 small-12 title-bar large-centered">
+                <div class="title">History</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="variable-history columns large-8 medium-12 small-12 title-bar large-centered">
+                <variable-chart stream-series="vm.streamSeries"></variable-chart>
+            </div>
+        </div>
+    </section>
+</div>

@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>Camp IoT: Raspberry Pi Configuration</title>        
+    </head>
+
+    <body>
+        <form action="/start" method="POST">
+            <input type="text" placeholder="Sensor Id" name="sensorId"/>
+            <input type="text" placeholder="LED State Id" name="ledStateId"/>
+            <input type="text" placeholder="LED Stream Id" name="ledStreamId"/>
+            <input type="text" placeholder="Toggle LED Id" name="toggleLedId"/>
+            <label for="startStream">Start stream</label>
+            <input type="checkbox" id="startStream" checked name="startStream" value="true"/>
+            <input type="submit" value="Start LEDing"/>
+        </form>
+    </body>
+</html>

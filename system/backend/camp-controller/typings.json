@@ -1,0 +1,29 @@
+{
+  "name": "camp-iot-controller",
+  "version": false,
+  "dependencies": {
+    "lodash": "registry:npm/lodash#4.0.0+20160305082308",
+    "node-uuid": "registry:npm/node-uuid#1.4.7+20160503013124"
+  },
+  "ambientDependencies": {
+    "bcrypt-nodejs": "registry:dt/bcrypt-nodejs#0.0.0+20160316155526",
+    "body-parser": "registry:dt/body-parser#0.0.0+20160112113357",
+    "bunyan": "registry:dt/bunyan#0.0.0+20160412155112",
+    "cors": "registry:dt/cors#0.0.0+20160317120654",
+    "documentdb": "registry:dt/documentdb#0.0.0+20160316155526",
+    "express": "registry:dt/express#4.0.0+20160208031452",
+    "jasmine": "registry:dt/jasmine#2.2.0+20160317120654",
+    "jsonwebtoken": "registry:dt/jsonwebtoken#0.0.0+20160316155526",
+    "mime": "registry:dt/mime#0.0.0+20151204023458",
+    "mongodb": "registry:dt/mongodb#2.1.0+20160316155526",
+    "mongoose": "registry:dt/mongoose#3.8.5+20160316155526",
+    "node": "registry:dt/node#4.0.0+20160311162451",
+    "serve-static": "registry:dt/serve-static#0.0.0+20160104095738",
+    "socket.io": "registry:dt/socket.io#1.4.4+20160317120654",
+    "source-map-support": "registry:dt/source-map-support#0.2.10+20150504204506",
+    "validator": "registry:dt/validator#4.5.1+20160124232055"
+  },
+  "globalDependencies": {
+    "mqtt": "registry:dt/mqtt#0.0.0+20160317120654"
+  }
+}

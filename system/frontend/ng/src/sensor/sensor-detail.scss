@@ -1,0 +1,34 @@
+.sensor-info {
+  button {
+    margin: 0;
+  }
+
+  .copy-container {
+    & > span {
+      background-color: white;
+      padding: 1.29rem;
+    }
+
+    & > span:nth-child(1) {
+      background-color: #2e2e2e;
+      color: white;
+    }
+  }
+
+  .job-var-container {
+    button:nth-child(1) {
+      //background-color: #00974E;
+      background-color: #00B9A5;
+    }
+
+    button:nth-child(2) {
+      background-color: #EDA200;
+    }
+  }
+}
+
+#variable-modal {
+  select {
+    background-position: 97% center;
+  }
+}

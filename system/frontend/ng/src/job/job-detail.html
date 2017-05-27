@@ -1,0 +1,31 @@
+<div class="job-detail-container">
+    <div class="row">
+        <div class="columns large-8 medium-12 small-12 title-bar large-centered">
+            <div class="title">{{::vm.job.name}}</div>
+        </div>
+    </div>
+    <section class="row sensor-info">
+        <div class="columns large-8 medium-12 small-12 large-centered">
+            <entity-info entity="vm.job"></entity-info>
+        </div>
+    </section>
+    <section class="job-invoker">
+        <form name="jobInvoker" ng-submit="vm.invokeJob(jobInvoker)">
+            <div class="row large-5 medium-10 small-12" ng-repeat="parameter in vm.job.parameters track by $index">
+                <div class="column large-9 medium-9 small-10 small-centered medium-centered large-centered">
+                    <label class="medium-centered">
+                        <input type="text" placeholder="{{::parameter}}" name="parameterName"
+                               ng-model="vm.paramValues[parameter]">
+                    </label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column large-4 medium-4 small-10 small-centered medium-centered large-centered">
+                    <input type="submit"
+                           class="button expand"
+                           value="Invoke"/>
+                </div>
+            </div>
+        </form>
+    </section>
+</div>

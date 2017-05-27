@@ -1,0 +1,47 @@
+@import "settings";
+@import "foundation";
+@import "helpers";
+
+body {
+  background: #F0F0F3;
+}
+
+.off-canvas-wrap {
+  height: 100%;
+}
+
+.off-canvas-wrap > .inner-wrap {
+  height: 100%;
+}
+
+.tab-bar-section > .title a {
+  color: white;
+}
+
+main.grid-content {
+  overflow-y: auto;
+  //height: auto;
+  padding: 0 0 $correctOffset 0;
+}
+
+.loginButton {
+  //font-size: xx-large;
+  //padding: 3px 10px;
+  padding: 0;
+  width: 44px;
+  height: 43px;
+  margin: 0;
+
+  img {
+    fill: $secondary-color;
+  }
+}
+
+@import "../../entity-list/entity-list";
+@import "../../entity-info/entity-info";
+@import "../../login/login";
+@import "../../sensor/sensor";
+@import "../../sensor/sensor-detail";
+@import "../../variable/variable-detail";
+@import "../../job/job-form";
+@import "../../job/job-detail";

@@ -1,0 +1,19 @@
+<div class="sensor-container">
+    <div class="row">
+        <div class="sensor-registration-area columns small-10 medium-10 large-7 large-centered medium-centered small-centered">
+            <form name="sensorForm" ng-submit="vm.addSensor(sensorForm)">
+                <div class="row">
+                    <div class="columns small-12 medium-12 large-12">
+                        <input type="text" placeholder="Name" name="name" ng-model="vm.name" ng-required="true"/>
+                    </div>
+                </div>
+                <input type="submit" class="button expand" value="Add"/>
+            </form>
+        </div>
+    </div>
+
+    <entity-list entities="vm.sensors"
+                 entity-detail-state="'secure.sensor-detail'"
+                 entity-controller="vm"
+                 image-src="'images/chip.png'"></entity-list>
+</div>
